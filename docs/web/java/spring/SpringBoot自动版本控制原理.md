@@ -165,4 +165,3 @@ public class HelloController {
 - `@Bean` 一般和`@Component` 或者 `@Configuration`一起使用
 - `@Bean` 注解默认作用域为单例singleton作用域，可通过`@Scope("prototype")`设置为原型作用域
 
-<Vssue :title="$title" />

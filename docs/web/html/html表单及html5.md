@@ -254,4 +254,5 @@ header, section, footer, aside, nav, main, article, figure {
 4. **checkValidity()方法**
    - 如果元素有没有满足它的任意约束，返回false，其他情况返回true
 5. **setCustomValidity()方法**
-   - 设置预定义信息<Vssue :title="$title" />
+   - 设置预定义信息
+

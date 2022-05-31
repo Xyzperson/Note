@@ -182,4 +182,3 @@ POM 中加入
 最后在maven-->Lifecycle中选择打包方式, 再`Run Maven Build`, 创建jar包, 在目标服务器运行即可
 
 > 使用 java -jar '/path/to/xxx.jar' 运行jar
-<Vssue :title="$title" />

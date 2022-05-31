@@ -29,7 +29,7 @@ System.out.println(session.isNew());
 ```
 ## Session 对象作用域
 &emsp;&emsp;Session 用来表示一次会话，在一次会话中数据是可以共享的，这时session作为域对象存在，可以通过setAttribute(name, value)方法向域对象中添加数据，通过getAttribute(name)从域对象中获取数据，通过removeAttribute(name)从域对象中移除数据。
-```c++
+```java
 //获取一个session对象，若session对象存在则获取，不存在则创建
 HttpSession session = request.getSession();
 
