@@ -12,7 +12,7 @@ export default {
         docsDir: 'docs',
         docsBranch: 'master',
         editLinks: true,
-        editLinksText: '编辑',
+        editLinkText: '编辑',
         lastUpdated: '上一次更新',
 
 
