@@ -114,6 +114,14 @@ export default {
         lineNumbers: true,
         config: md => {
             md.use(require('markdown-it-katex'))   
+            const originalRender = md.render
+            const REG_MATH_MUSTACHE_TAG = /<span class="katex">/g
+            const replacer = '<span v-pre class="katex">'
+            md.render = function () {
+                return originalRender
+                        .apply(this, arguments)
+                        .replace(REG_MATH_MUSTACHE_TAG, replacer)
+            }
         }
     },
 }

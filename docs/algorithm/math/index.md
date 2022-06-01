@@ -1,6 +1,5 @@
 ---
 title: 简单数学
-date: 2022-04-27 17:16:34
 tags: 
   - Math
   - Algorithm
@@ -10,6 +9,7 @@ tags:
 ## 加法
 A + B
 像加法一样
+
 ```cpp
 vector<int> add(vector<int> &A, vector<int> &B){
     int tmp = 0;
@@ -37,8 +37,8 @@ A x b
 
 大数乘小数，将大数各个位数与小数相乘，保存个位，剩余位数待下次运算加上。
 ```cpp
-include <iostream>
-include <vector>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -84,8 +84,8 @@ A x B
 大数乘大数，将各位数乘积结果按位加入结果数组中，此时各位的结果就是**各数组元素**加入上**进位数**取个位，即模拟人工笔算
 
 ```cpp
-include <iostream>
-include <vector>
+#include <iostream>
+#include <vector>
 
 using namespace std;
     
@@ -132,7 +132,7 @@ A / b
 和手算除法的步骤是一样的，记得去除首0，翻转答案数组，因为答案是从高位存的
 
 ```cpp
-include <bits/stdcpp.h>
+#include <bits/stdcpp.h>
 
 using namespace std;
 
@@ -185,7 +185,7 @@ int main()
 - 时间:$O(logn)$
 
 ```cpp
-include <iostream>
+#include <iostream>
 
 using namespace std;
 typedef long long LL;
@@ -237,8 +237,9 @@ int main()
 阶乘中质因数的指数：$cnt_pmi(a!)= \left\lfloor\frac{a}{p}\right\rfloor + \left\lfloor\frac{a}{p^2}\right\rfloor + ... + \left\lfloor\frac{a}{p^k}\right\rfloor = k$
 
 题目：求n!中有多少个尾数0(由于 2 * 5 = 10 , 而2的数量比5的多，因此0的个数取决于5的指数)
+
 ```cpp
-include <iostream>
+#include <iostream>
 
 using namespace std;
 
