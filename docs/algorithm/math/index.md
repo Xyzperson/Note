@@ -132,7 +132,7 @@ A / b
 和手算除法的步骤是一样的，记得去除首0，翻转答案数组，因为答案是从高位存的
 
 ```cpp
-#include <bits/stdcpp.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
