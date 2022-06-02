@@ -48,7 +48,7 @@ export default {
             '/algorithm/': [
 
                 {
-                    text: '数学知识', link: '/algorithm/math/',
+                    text: '数学知识',
                     children: [
                         {text: '简单数学', link: '/algorithm/math/'},
                         {text: '组合数学', link: '/algorithm/math/02-组合数学'},
@@ -57,14 +57,14 @@ export default {
                     
                 },
                 {
-                    text: '数据结构', link: '/algorithm/data/',
+                    text: '数据结构',
                     children: [
                         {text: '树', link: '/algorithm/data/03-树'},
                         {text: '图', link: '/algorithm/data/04-图'},
                     ]
                 },
                 {
-                    text: '算法', link: '/algorithm/',
+                    text: '算法',
                     children: [
                         {text: '搜索', link: '/algorithm/04-搜索'},
                         {text: '动态规划', link: '/algorithm/05-动态规划'},

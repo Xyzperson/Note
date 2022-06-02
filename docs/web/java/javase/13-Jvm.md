@@ -1,7 +1,6 @@
 ---
 title: Jvm
 tags:
-  - Web
   - Java
 ---
 
