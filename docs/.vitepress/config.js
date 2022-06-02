@@ -98,14 +98,14 @@ export default {
                     ]
                 },
                 {
-                    text: 'JavaEE',
+                    text: 'javaWeb',
                     children: [
-                        {text: 'Servlet基础知识', link: '/web/java/javaee/01-Servlet基础知识'},
-                        {text: 'Http请求回应对象', link: '/web/java/javaee/02-http请求回应对象'},
-                        {text: 'Cookie对象', link: '/web/java/javaee/03-Cookie对象'},
-                        {text: 'HttpSession对象', link: '/web/java/javaee/04-HttpSession对象'},
-                        {text: 'Json', link: '/web/java/javaee/05-返回Json'},
-                        {text: '文件的上传和下载', link: '/web/java/javaee/06-文件的上传和下载'},
+                        {text: 'Servlet基础知识', link: '/web/java/javaweb/01-Servlet基础知识'},
+                        {text: 'Http请求回应对象', link: '/web/java/javaweb/02-http请求回应对象'},
+                        {text: 'Cookie对象', link: '/web/java/javaweb/03-Cookie对象'},
+                        {text: 'HttpSession对象', link: '/web/java/javaweb/04-HttpSession对象'},
+                        {text: 'Json', link: '/web/java/javaweb/05-返回Json'},
+                        {text: '文件的上传和下载', link: '/web/java/javaweb/06-文件的上传和下载'},
                         
                     ]
                 }
