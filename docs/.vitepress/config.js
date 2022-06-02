@@ -33,7 +33,12 @@ export default {
                     { text: 'Java', link: '/web/java/' },
 
             ]},
-            { text: 'Cs', link: '/cs/'},
+            { 
+                text: 'Cs', link: '/cs/',
+                items: [
+                    { text: 'MYSQL', link: '/cs/database/mysql/01-sql基础知识'}
+                ]
+            },
             { text: '其他', link: '/others/'},
         ],
         sidebar: {
@@ -105,7 +110,26 @@ export default {
                     ]
                 }
 
+            ],
+
+            '/cs/database/mysql': [
+                {
+                    text: '基础使用', 
+                    children: [
+                        {text: 'SQL基础知识', link: '/cs/database/mysql/01-sql基础知识'},
+                        {text: 'DDL', link: '/cs/database/mysql/02-DDL'},
+                        {text: 'DML', link: '/cs/database/mysql/03-DML'},
+                        {text: 'DQL', link: '/cs/database/mysql/04-DQL'},
+                        {text: 'DCL', link: '/cs/database/mysql/05-DCL'},
+                        {text: '函数', link: '/cs/database/mysql/06-函数'},
+                        {text: '约束', link: '/cs/database/mysql/07-约束'},
+                        {text: '多表查询', link: '/cs/database/mysql/08-多表查询'},
+                        {text: '事务', link: '/cs/database/mysql/09-事务'},
+                        {text: '其他', link: '/cs/database/mysql/10-其他'},
+                    ]
+                }
             ]
+
 
         }
 
