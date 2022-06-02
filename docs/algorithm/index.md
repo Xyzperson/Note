@@ -12,11 +12,11 @@ tags:
 
 &emsp;&emsp;使用这种方式时，时间复杂度可被称为是渐近的，亦即考察输入值大小趋近无穷时的情况
 
-&emsp;&emsp;例如，如果一个算法对于任何大小为 n （必须比 n0 大）的输入，它至多需要 5n3 + 3n 的时间运行完毕，那么它的渐近时间复杂度是 O(n3)。
+&emsp;&emsp;例如，如果一个算法对于任何大小为 n （必须比 n0 大）的输入，它至多需要 $5n^3 + 3n$ 的时间运行完毕，那么它的渐近时间复杂度是 $O(n^3)$。
 
 
 :::info
-为了计算时间复杂度，我们通常会估计算法的操作单元数量，每个单元执行的时间都是相同的。因此，总运行时间和算法的操作单元数量最多相差一个常量系数。
+为了计算时间复杂度，我们通常会估计算法的<strong>操作单元数量</strong>，每个单元执行的时间都是相同的。因此，总运行时间和算法的操作单元数量最多相差一个常量系数。
 :::
 
 ## 空间复杂度
@@ -24,7 +24,7 @@ tags:
 
 &emsp;&emsp;空间复杂度是对一个算法在运行过程中临时占用存储空间大小的一个量度，同样反映的是一个趋势，我们用 S(n) 来定义。
 
-&emsp;&emsp;空间复杂度比较常用的有：O(1)、O(n)、O(n²)
+&emsp;&emsp;空间复杂度比较常用的有：$O(1)$、$O(n)$、$O(n^2)$
 
 ## 范围知识
 
@@ -58,17 +58,17 @@ tags:
 
 1. n≤30, 指数级别, dfs+剪枝，状态压缩dp
 
-2. n≤100 => O(n3)O(n3)，floyd，dp，高斯消元
+2. n≤100 => $O(n^3)$，floyd，dp，高斯消元
 
-3. n≤1000 => O(n2)O(n2)，O(n2logn)O(n2logn)，dp，二分，朴素版Dijkstra、朴素版Prim、Bellman-Ford
-4. n≤10000 => O(n∗n√)O(n∗n)，块状链表2分块、莫队
-5. n≤100000 => O(nlogn)O(nlogn) => 各种sort，线段树、树状数组、set/map、heap、拓扑排序、dijkstra+heap、prim+heap、Kruskal、spfa、求凸包、求半平面交、二分、CDQ分治、整体二分、后缀数组、树链剖分、动态树
-6. n≤1000000n≤1000000 => O(n)O(n), 以及常数较小的 O(nlogn)O(nlogn) 算法 => 单调队列、 hash、双指针扫描、并查集，kmp、AC自动机，常数比较小的 O(nlogn)O(nlogn) 的做法：sort、树状数组、heap、dijkstra、spfa
-7. n≤10000000 => O(n)O(n)，双指针扫描、kmp、AC自动机、线性筛素数
-8. n≤10^9 => O(n√)O(n)，判断质数
-9. n≤10^18 => O(logn)O(logn)，最大公约数，快速幂，数位DP
-10. n≤10^1000 => O((logn)2)O((logn)2)，高精度加减乘除
-11. n≤10^100000 => O(logk×loglogk)，k表示位数O(logk×loglogk)，k表示位数，高精度加减、FFT/NTT
+3. n≤1000 => $O(n^2)$，$O(n^2logn)$，dp，二分，朴素版Dijkstra、朴素版Prim、Bellman-Ford
+4. n≤10000 => $O(n \sqrt{n})$，块状链表2分块、莫队
+5. n≤100000 => $O(nlogn)$ => 各种sort，线段树、树状数组、set/map、heap、拓扑排序、dijkstra+heap、prim+heap、Kruskal、spfa、求凸包、求半平面交、二分、CDQ分治、整体二分、后缀数组、树链剖分、动态树
+6. n≤1000000n≤1000000 => $O(n)$, 以及常数较小的 $O(nlogn)$ 算法 => 单调队列、 hash、双指针扫描、并查集，kmp、AC自动机，常数比较小的 $O(nlogn)$ 的做法：sort、树状数组、heap、dijkstra、spfa
+7. n≤10000000 => $O(n)$，双指针扫描、kmp、AC自动机、线性筛素数
+8. n≤10^9 => $O(\sqrt{n})$，判断质数
+9. n≤10^18 => $O(logn)$，最大公约数，快速幂，数位DP
+10. n≤10^1000 => $O((logn)^2)$，高精度加减乘除
+11. n≤10^100000 => $O(logk * loglogk)$，k表示位数，k表示位数，高精度加减、FFT/NTT
 
 > 作者：yxc<br>
 > 链接：https://www.acwing.com/blog/content/32/<br>
