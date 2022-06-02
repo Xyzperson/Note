@@ -1,7 +1,7 @@
 export default {
     base: '/',
     lang: 'zh-CN',
-    title: "Mosquito's Note",
+    title: "📖Mosquito's Note📖",
     description: '个人笔记',
     lastUpdated: true,
     head: [
@@ -16,8 +16,8 @@ export default {
         docsDir: 'docs',
         docsBranch: 'master',
         editLinks: true,
-        editLinkText: '编辑',
-        lastUpdated: '上一次更新',
+        editLinkText: '编辑✍🏻️',
+        lastUpdated: '上一次更新⌚️',
 
 
         nav: [
