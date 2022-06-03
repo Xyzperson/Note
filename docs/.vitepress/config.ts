@@ -98,7 +98,7 @@ export default {
                     ]
                 },
                 {
-                    text: 'javaWeb',
+                    text: 'JavaWeb',
                     children: [
                         {text: 'Servlet基础知识', link: '/web/java/javaweb/01-Servlet基础知识'},
                         {text: 'Http请求回应对象', link: '/web/java/javaweb/02-http请求回应对象'},
@@ -108,7 +108,19 @@ export default {
                         {text: '文件的上传和下载', link: '/web/java/javaweb/06-文件的上传和下载'},
                         
                     ]
-                }
+                },
+                {
+                    text: 'SpringMVC',
+                    children: [
+                        {text: 'SpringMVC简介', link: '/web/java/javaweb/01-SpringMVC简介'},
+                    ]
+                },
+                {
+                    text: 'Spring',
+                    children: [
+                        {text: 'Spring简介', link: '/web/java/javaweb/01-Spring简介'},
+                    ]
+                },
 
             ],
 
