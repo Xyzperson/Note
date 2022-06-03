@@ -112,13 +112,13 @@ export default {
                 {
                     text: 'SpringMVC',
                     children: [
-                        {text: 'SpringMVC简介', link: '/web/java/ssm/01-SpringMVC简介'},
+                        {text: 'SpringMVC简介', link: '/web/java/ssm/springmvc/01-SpringMVC简介'},
                     ]
                 },
                 {
                     text: 'Spring',
                     children: [
-                        {text: 'Spring简介', link: '/web/java/ssm/01-Spring简介'},
+                        {text: 'Spring简介', link: '/web/java/ssm/spring/01-Spring简介'},
                     ]
                 },
 

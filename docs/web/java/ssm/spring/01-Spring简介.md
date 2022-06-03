@@ -36,11 +36,11 @@
 
 
 
-:::tip
+::: tip
 一般地只需要导入基础的 Beans, Core, Context, Expression 等包就足够了
 :::
 
-:::warn
+::: warn
 如果报错，可能是没有导入日志包`commons-logging-xx.jar`导致的
 :::
 
@@ -58,7 +58,7 @@
     <bean id="user" class="com.demo.test.testm.User"> </bean>
 </beans>
 ```
-:::warn
+::: warn
 在新版本的 spring 中，配置文件应该放在`src/main/resources`下，否则找不到
 :::
 
