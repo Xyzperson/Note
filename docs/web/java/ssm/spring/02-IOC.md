@@ -43,7 +43,7 @@ IOC（Inversion of Control, 控制反转），是<mark>面向对象编程</mark>
 ![image](https://user-images.githubusercontent.com/94043894/172037940-2215e451-a841-4161-927c-3cd4355c4c32.png)
 
 - FileSystemXmlApplicationContext 要写 xml 文件相对于系统下的类路径
-- ClassPathXmlApplicatonContext 要写 xml 文件内部路径写进来
+- ClassPathXmlApplicatonContext 要写 xml 文件内部路径
 
 :::warning
 新版本 spring 配置文件默认扫描路径不再是 `src/`，而是 `src/main/resourses`
