@@ -86,17 +86,54 @@ DI:依赖注入，就是注入属性
     1. 在类中设置 set 方法
     2. 在 spring 配置文件配置对象创建，配置属性注入
 
+
+
 ```xml
 <!-- 1 配置对象创建-->
 <!-- 2 set 方法注入属性-->
 <bean id = "book" class="com.demo.test.User">
     <property name="money" value="1230"></property>
+    <!-- name: 类里面属性名称 -->
+    <!-- value: 向属性注入的值 -->
 </bean>
 
 ```
+
+
 - 有参数构造进行注入
+    1. 创建类，定义属性，创建属性对应有参数构造方法
+    2. 在 spring 配置文件中配置
 
 
+```xml
+<bean id="orders" class="com.demo.test.Orders">
+    <constructor-arg name="What" value="w"></constructor-arg>
+    <constructor-arg name="Test" value="t"></constructor-arg>
+    <constructor-arg index="0" value="t"></constructor-arg>
+    <!-- name 表示形参的名字，value 表示值， -->
+    <!-- index 表示第几个参数 -->
+</bean>
+```
+
+- p 名称空间注入
+    1. 添加 p 名称空间在配置文件中
+    2. 进行属性注入
+
+
+
+```xml
+<!-- 添加 p 命名空间 -->
+<beans xmlns:p="http://www.springframework.org/schema/beans"
+    <bean id="book" class="com.demo.test.Book" p:What="w" p:Test="t">
+    </bean>
+</beans>
+```
+
+
+
+:::tip
+使用 p 名称空间注入，可以简化基于 xml 配置方式
+:::
 
 
 
