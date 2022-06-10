@@ -130,10 +130,35 @@ DI:依赖注入，就是注入属性
 ```
 
 
-
 :::tip
 使用 p 名称空间注入，可以简化基于 xml 配置方式
 :::
+
+<br>
+
+<mark>
+注入其他类型属性（字面量）
+</mark>
+
+<br>
+
+```xml
+<!-- 空 -->
+<property name="address">
+    <null/>
+</property>
+
+<!-- 特殊符号要转义 -->
+<!-- 把带特殊符号内容写进 CDATA -->
+<property name="address">
+    <value><![CDATA[<<what>>]]></value>
+</property>
+```
+
+
+#### 注入属性-外部 bean
+
+创建两个类 service 类和 test 类
 
 
 
